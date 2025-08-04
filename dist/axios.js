@@ -1,4 +1,4 @@
-// axios v0.30.0 Copyright (c) 2025 Matt Zabriskie
+// axios v0.30.1 Copyright (c) 2025 Matt Zabriskie
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -625,7 +625,7 @@
   var AxiosError_1 = AxiosError;
 
   /* eslint-env browser */
-  var browser$1 = typeof self == 'object' ? self.FormData : window.FormData;
+  var browser$1 = typeof self === 'object' ? self.FormData : window.FormData;
 
   // eslint-disable-next-line strict
   var FormData$1 = browser$1;

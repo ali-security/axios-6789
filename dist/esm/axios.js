@@ -1,4 +1,4 @@
-// axios v0.30.0 Copyright (c) 2025 Matt Zabriskie
+// axios v0.30.1 Copyright (c) 2025 Matt Zabriskie
 var bind = function bind(fn, thisArg) {
   return function wrap() {
     return fn.apply(thisArg, arguments);
@@ -619,7 +619,7 @@ AxiosError.from = function(error, code, config, request, response, customProps) 
 var AxiosError_1 = AxiosError;
 
 /* eslint-env browser */
-var browser$1 = typeof self == 'object' ? self.FormData : window.FormData;
+var browser$1 = typeof self === 'object' ? self.FormData : window.FormData;
 
 // eslint-disable-next-line strict
 var FormData$1 = browser$1;
