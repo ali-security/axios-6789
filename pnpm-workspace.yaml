@@ -1,5 +1,9 @@
-prefer-workspace-packages: true
 packages:
-  - docs/**
+  - sites/**
   - lib/**
   - packages/**
+
+ignoredBuiltDependencies:
+  - esbuild
+
+prefer-workspace-packages: true
