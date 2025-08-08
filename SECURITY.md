@@ -8,7 +8,8 @@ The following versions will receive security updates promptly based on the maint
 | ------- | ------------------ |
 | 0.x.x   | :white_check_mark: |
 | 1.x.x   | :white_check_mark: |
+| 2.x.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, please use the GitHub discolsure in the security tab to alert us to a security issue.
+To report a vulnerability, please use the GitHub disclosure in the security tab to alert us to a security issue.
