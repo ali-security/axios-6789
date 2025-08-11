@@ -160,11 +160,14 @@ const buildLinks = (url, bypass = false) => {
 /**
  * Formats all active sponsors.
  *
- * @param {Object: {fromAccount}} sponsorsData
- *
+ * @param {Array: [{fromAccount}]} sponsorsData
  * @returns {any} The formatted sponsor data.
  */
 const formatActiveSponsorData = (sponsorsData) => {
+  /**
+   * @param {Object: {fromAccount, tier}} sponsor
+   * @returns {string|string|*|string}
+   */
   const getSponsorTier = (sponsor) => {
     if (config.legacyAgreements[sponsor.fromAccount.name]) {
       return config.legacyAgreements[sponsor.fromAccount.name];
@@ -204,10 +207,14 @@ const formatActiveSponsorData = (sponsorsData) => {
 /**
  * Formats all sponsors irrespective state.
  *
- * @param {Object: {account}} sponsorsData
+ * @param {Array: [{account}]} sponsorsData
  * @returns {any} The formatted sponsor data.
  */
 const formatAllSponsorData = (sponsorsData) => {
+  /**
+   * @param {Object: {account, tier}} sponsor
+   * @returns {string|string|*|string}
+   */
   const getSponsorTier = (sponsor) => {
     if (config.legacyAgreements[sponsor.account.name]) {
       return config.legacyAgreements[sponsor.account.name];

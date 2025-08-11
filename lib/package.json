@@ -1,13 +1,14 @@
 {
-  "name": "axios",
+  "name": "@axios/axios",
   "version": "2.0.0",
   "description": "Promise based HTTP client for the browser and node.js",
   "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
-  "types": "dist/types.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
-    "lib:build": "parcel build"
+    "lib:build": "vite --config vite.build.config.ts build",
+    "lib:test": "vitest run"
   },
   "type": "module",
   "repository": {
@@ -30,12 +31,14 @@
   "homepage": "https://axios.rest",
   "sideEffects": false,
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "prettier": "^3.6.2"
-  },
-  "dependencies": {
-    "vite": "^7.1.1"
+    "prettier": "^3.6.2",
+    "vite": "^7.1.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^3.2.4"
   }
 }
