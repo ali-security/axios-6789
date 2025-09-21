@@ -408,6 +408,20 @@ axios.interceptors.response.use((response: AxiosResponse) => Promise.resolve(res
 axios.interceptors.request.clear();
 axios.interceptors.response.clear();
 
+// AxiosError interceptor typing test
+axios.interceptors.response.use(
+  (response: AxiosResponse) => response,
+  (error: AxiosError) => {
+    if (error.response) {
+      // These should be properly typed, not 'unknown'
+      const status: number = error.response.status;
+      const data: unknown = error.response.data;
+      console.log(status, data);
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Adapters
 
 const adapter: AxiosAdapter = (config) => {
