@@ -1,4 +1,4 @@
-// axios v0.30.1 Copyright (c) 2025 Matt Zabriskie
+// axios v0.30.2 Copyright (c) 2025 Matt Zabriskie
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -1913,7 +1913,7 @@
   };
 
   var data = {
-    "version": "0.30.1"
+    "version": "0.30.2"
   };
 
   var VERSION = data.version;

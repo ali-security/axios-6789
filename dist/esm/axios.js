@@ -1,4 +1,4 @@
-// axios v0.30.1 Copyright (c) 2025 Matt Zabriskie
+// axios v0.30.2 Copyright (c) 2025 Matt Zabriskie
 var bind = function bind(fn, thisArg) {
   return function wrap() {
     return fn.apply(thisArg, arguments);
@@ -1907,7 +1907,7 @@ var mergeConfig = function mergeConfig(config1, config2) {
 };
 
 var data = {
-  "version": "0.30.1"
+  "version": "0.30.2"
 };
 
 var VERSION = data.version;
